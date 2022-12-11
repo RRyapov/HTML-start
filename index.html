@@ -95,5 +95,43 @@
         <li>November</li>
     </ol>
     <hr>
+    <title>Tables</title>
+    <style>
+        table,
+        table * {
+            border: solid 2px gray;
+            background: blanchedalmond;
+            color: black;
+        }
+    </style>
+    <table>
+        <caption>Рандомные люди</caption>
+            <thead>
+                <th><b>Пол</b></th>
+                <th><b>Имя</b></th>
+                <th><b>Возраст</b></th>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Мужской</td>
+                        <td>Василий</td>
+                        <td>28 лет</td>
+                    </tr>
+                    <tr>
+                        <td>Антон</td>
+                        <td>35 лет</td>
+                    </tr>
+                        <tr>
+                        <td rowspan="2">Женский</td>
+                        <td colspan="2">Юлия</td>
+                    </tr>
+                    <tr>   
+                        <td>Валентина</td>
+                        <td>44 года</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+    </table>
+<hr>
 </body>
 </html>
