@@ -214,20 +214,21 @@
                 <label for="sasquatch">Sasquatch</label><br>
         
                 <input type="checkbox" id="mothman" name="monster" value="M" />
-                <label for="mothman">Mothman</label> 
+                <label for="mothman">Mothman</label><br>
+                <input type="reset"> 
             </div>
         </fieldset>   
 <hr>
     <fieldset>
         <legend>Пробная форма 2</legend>
             <div>
-                <input type="radio" id="Да" name="Да" value="Д">
+                <input type="radio" id="Да" name="value" value="Д">
                 <label for="Да">Да</label><br>
         
-                <input type="radio" id="Нет" name="Нет" value="Н">
+                <input type="radio" id="Нет" name="value" value="Н">
                 <label for="Нет">Нет</label><br>
         
-                <input type="radio" id="Наверное" name="Наверное" value="Н" />
+                <input type="radio" id="Наверное" name="value" value="Нав" checked/>
                 <label for="Наверное">Наверное</label><br> 
                 <input type="submit"><br>
                 <input type="reset">
@@ -258,13 +259,32 @@
 <div>
     <input type="color">
 </div>
+
 <div>
-    <input type="list" list="list">
-    <datalist id="list">
+    <input type="text" list="list_1">
+    <datalist id="list_1">
         <option value="Единицы"></option>
         <option value="Десятки"></option>
         <option value="Сотни"></option>
     </datalist>
+</div>
+<!--При таком формате перечня кнопка reset не будет работать корректно, поскольку для нее обязателен атрибут id=""-->
+<div>
+    <label>
+        <input type="checkbox" name="Step" value="option 1">
+        "First step"
+    </label><br>
+    <label>
+        <input type="checkbox" name="Step" value="option 2">
+        "Second step"
+    </label><br>
+    <label>
+        <input type="checkbox" name="Step" value="option 3">
+        "Third step"
+    </label> <br>
+    <input type="reset">
+
+    
 </div>
 
 
