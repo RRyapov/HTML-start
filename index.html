@@ -224,16 +224,17 @@
                 <input type="radio" id="Да" name="Да" value="Д">
                 <label for="Да">Да</label><br>
         
-                <input type="radio" id="sasquatch" name="monster" value="S">
-                <label for="sasquatch">Sasquatch</label><br>
+                <input type="radio" id="Нет" name="Нет" value="Н">
+                <label for="Нет">Нет</label><br>
         
-                <input type="radio" id="mothman" name="monster" value="M" />
-                <label for="mothman">Mothman</label> 
+                <input type="radio" id="Наверное" name="Наверное" value="Н" />
+                <label for="Наверное">Наверное</label><br> 
+                <input type="submit"><br>
+                <input type="reset">
             </div>  
     </fieldset>    
             <!--Форма выпадающего списка-->
     <fieldset>
-
          <select>  
             <option selected>Номер первый</option>
             <option>Номер второй</option>
@@ -241,7 +242,30 @@
         </select>
     </fieldset>
 </form>
-
+<!--Тег input с различными атрибутами-->
+<div>
+    <input type="number" step="3" min="1" max="50">
+</div>
+<div>
+    <input type="password">
+</div>
+<div>
+    <input type="range">
+</div>
+<div>
+    <input type="date">
+</div>
+<div>
+    <input type="color">
+</div>
+<div>
+    <input type="list" list="list">
+    <datalist id="list">
+        <option value="Единицы"></option>
+        <option value="Десятки"></option>
+        <option value="Сотни"></option>
+    </datalist>
+</div>
 
 
 </body>
